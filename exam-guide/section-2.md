@@ -11,6 +11,7 @@ Considerations include:
         * [Running the Datastore Emulator](https://cloud.google.com/datastore/docs/tools/datastore-emulator)
         * [Introduction to Firebase Local Emulator Suite](https://firebase.google.com/docs/emulator-suite)
         * [Using the Cloud Spanner Emulator](https://cloud.google.com/spanner/docs/emulator)
+        * [Develop a Cloud Run service locally in Cloud Code for VS Code](https://cloud.google.com/code/docs/vscode/develop-service#customizing_an_existing_launchjson_configuration)
     * Creating Google Cloud projects
         * [Creating and managing projects](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
     * Using the command-line interface (CLI), Google Cloud Console, and Cloud Shell tools

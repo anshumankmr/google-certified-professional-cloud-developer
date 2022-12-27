@@ -31,8 +31,8 @@ Considerations include:
 * User session management
    * Tutorial
       * [AppEngine - Handling sessions with Firestore](https://cloud.google.com/go/getting-started/session-handling-with-firestore)
-   * Open Questions
-      * Is IAP in scope for the exam?
+      * [Centralize access to your organization’s websites with Identity Aware Proxy (IAP)](https://www.youtube.com/watch?v=xM9-FSU5MoY&ab_channel=GoogleCloudTech)
+      *
 * Caching solutions
    * App Layer Caching
       * Reading
@@ -42,12 +42,12 @@ Considerations include:
       * Reading
          * [Cloud CDN - Caching Overview]()https://cloud.google.com/cdn/docs/caching
          * [Cloud Storage - Caching](https://cloud.google.com/storage/docs/caching)
+         * [Choosing When To Go With Google Cloud Storage's inbuilt caching OR with Google Cloud CDN](https://cloud.google.com/storage/docs/caching#overview)
 * Deploying and securing API services
    * Reading
       * [API Gateway service docs](https://cloud.google.com/api-gateway/docs)
       * [Cloud Endpoints services docs](https://cloud.google.com/endpoints)
-   * Open questions
-      * Does the exam cover API Gateway and/or Cloud Endpoints?
+      * [ApiGee vs Cloud Endpoint vs API Gateway](https://cloud.google.com/blog/products/application-modernization/choosing-between-apigee-api-gateway-and-cloud-endpoints)
 * Loosely coupled asynchronous applications (e.g., Apache Kafka, Pub/Sub)
    * Reading
       * [Solutions - DevOps tech: Architecture](https://cloud.google.com/solutions/devops/devops-tech-architecture)
@@ -55,10 +55,13 @@ Considerations include:
       * [Choosing the right architecture for global data distribution](https://cloud.google.com/solutions/architecture/global-data-distribution)
       * [Apache Kafka for GCP users: connectors for Pub/Sub, Dataflow and BigQuery](https://cloud.google.com/blog/products/data-analytics/apache-kafka-for-gcp-users-connectors-for-pubsub-dataflow-and-bigquery)
       * [Emulating Google’s Cloud Pub/Sub on Apache Kafka](https://medium.com/appscale/emulating-googles-cloud-pub-sub-on-apache-kafka-74084222c9db)
+      * [Cloud Pub/Sub Local Emulation](https://cloud.google.com/pubsub/docs/emulator) which is ideal for testing with Pub/Sublocally before pushing
+         * Open Question: Best way to simulate live traffic from Cloud on a local machine? Should one use data from a Unit Test OR something pulled from Production?
 * Graceful shutdown on platform termination
    * Reading
       * [Graceful shutdowns on Cloud Run: Deep dive](https://cloud.google.com/blog/topics/developers-practitioners/graceful-shutdowns-cloud-run-deep-dive)
       * [Kubernetes best practices: terminating with grace](https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-best-practices-terminating-with-grace)
+      * [Graceful shutdown for Pre-Emptible Compute Engines](https://cloud.google.com/compute/docs/shutdownscript#before-you-begin)
    * Code Examples
       * [k8s-node-termination-handler](https://github.com/GoogleCloudPlatform/k8s-node-termination-handler)
 * Google-recommended practices and documentation
@@ -116,6 +119,7 @@ Considerations include:
    * Reading
       * [SSL certificates overview](https://cloud.google.com/load-balancing/docs/ssl-certificates)
       * [Solution - Using mutual TLS to obtain short-lived credentials](https://cloud.google.com/solutions/using-mutual-tls-to-obtain-short-lived-credentials)
+      * When Should One Use A Self Signed Certificate and When Should one use Google Signed certificate?
 * Google-recommended practices and documentation
 
 ## 1.3 Managing application data.
@@ -156,6 +160,10 @@ Considerations include:
 * Refactoring a monolith to microservices
    * Reading
       * [Migrating a monolithic application to microservices on Google Kubernetes Engine](https://cloud.google.com/solutions/migrating-a-monolithic-app-to-microservices-gke)
+      Some Key Things to consider here:
+      * Understanding the options for Lift and Shift (Baremetal, VMWare, Compute Engine), Lift and Improve (Migrate for Compute Engine), Lift and Optimize (Migrate for Cloud Anthos), Refactor (Cloud Run, Cloud Functions etc.) https://cloud.google.com/architecture/migration-to-gcp-getting-started
+      * When Should One Migrate to the Cloud? https://cloud.google.com/architecture/migration-to-gcp-getting-started
+      * When Should One Not Migrate to the Cloud? https://cloud.google.com/architecture/migration-to-gcp-getting-started
 * Designing stateless, horizontally scalable services
    * Reading
       * [Solutions - Patterns for scalable and resilient apps](https://cloud.google.com/solutions/scalable-and-resilient-apps)
