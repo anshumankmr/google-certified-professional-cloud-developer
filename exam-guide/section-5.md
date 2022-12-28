@@ -19,6 +19,7 @@ Considerations include:
     * Reading
         * [Using the Logs Explorer](https://cloud.google.com/logging/docs/view/logs-viewer-interface)
         * [Logging query language](https://cloud.google.com/logging/docs/view/logging-query-language)
+        * How to Share Logs with third party
 * Inspecting resource utilization over time
     * Reading
         * [Compute Engine - Viewing usage reports](https://cloud.google.com/compute/docs/logging/usage-export)

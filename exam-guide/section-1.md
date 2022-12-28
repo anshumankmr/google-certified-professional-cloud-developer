@@ -174,4 +174,5 @@ Considerations include:
       * [Modernizing Your .NET Application for Google Cloud Platform](https://cloud.google.com/files/maximizing-cloud-computing-through-application-modernization.pdf)
       * [CIO Guide to Application Modernization](https://inthecloud.withgoogle.com/cio-guide-app-mod/cio_guide_app_modernization.pdf)
       * [Application modernization and the decoupling of infrastructure services and teams](https://services.google.com/fh/files/blogs/anthos_white_paper.pdf)
+      * [Cloud Workflows](https://cloud.google.com/workflows/docs/overview)
 

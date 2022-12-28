@@ -56,7 +56,9 @@ Considerations include:
 * Making API calls using supported options (e.g., Cloud Client Library, REST API or gRPC, APIs Explorer) taking into consideration:
    * Batching requests
       * [Cloud Storage - Sending batch requests](https://cloud.google.com/storage/docs/json_api/v1/how-tos/batch)
-   * Restricting return data
+      * Restricting return data: When making calls, since there are limits and quotas to the number of calls you can make, they should be carefully constructed. However, calls returning large amounts of data (for instance, all files in a bucket where logs are stored), can cause performance issues. Ensure that calls contain filters to get only the data needed. When calling for info about resources, filter with tools like labels to return the resources needed.
+         * https://cloud.google.com/docs/quota
+         * In the future, it may be helpful know how to implement quotas in something like Cloud Endpoints(https://cloud.google.com/endpoints/docs/openapi/quotas-overview)  though I did not receive any questions on this.
    * Paginating results
       * [BigQuery - Paging through table data](https://cloud.google.com/bigquery/docs/paging-results)
       * [Firestore - Paginating data with query cursors](https://cloud.google.com/firestore/docs/query-data/query-cursors)
@@ -64,6 +66,7 @@ Considerations include:
       * [BigQuery - Using cached query results](https://cloud.google.com/bigquery/docs/cached-results)
       * [Firestore - Access data offline](https://firebase.google.com/docs/firestore/manage-data/enable-offline)
       * [Caching data with Memorystore](https://firebase.google.com/docs/firestore/manage-data/enable-offline)
+      * [Caching in Cloud Spannner](https://cloud.google.com/spanner/docs/whitepapers/life-of-query#caching)
    * Error handling (e.g., exponential backoff)
       * [Solutions - Rate-limiting strategies and techniques](https://cloud.google.com/solutions/rate-limiting-strategies-techniques)
    * Reading

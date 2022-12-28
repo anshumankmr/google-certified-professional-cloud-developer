@@ -56,6 +56,8 @@ Considerations include:
 * Configuring Kubernetes namespaces
     * Reading
         * [Kubernetes best practices: Organizing with Namespaces](https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-best-practices-organizing-with-namespaces)
+            * It is very critical to understand when to use Namespace level quotas and cluster level quotas, and when to apply both. (ie like when doing developement, testing/staging and production, you should when to apply quotas)
+            * Also, it is important when dealing with teams
         * [GKE - Configuring namespaces and namespace-scoped objects](https://cloud.google.com/kubernetes-engine/docs/add-on/config-sync/how-to/namespace-scoped-objects)
 * Defining workload specifications (e.g., resource requirements)
     * Reading

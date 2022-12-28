@@ -75,10 +75,11 @@ Considerations include:
     * Reading
         * [Best practices for building containers](https://cloud.google.com/solutions/best-practices-for-building-containers)
         * [Binary Authorization](https://cloud.google.com/binary-authorization)
-* Developing a continuous integration pipeline using services (e.g., Cloud Build, Container Registry) that construct deployment artifacts
+* Developing a continuous integration pipeline using services (e.g., Cloud Build, Container Registry,Artifact Registry) that construct deployment artifacts
     * Reading
         * [CI/CD on Google Cloud](https://cloud.google.com/docs/ci-cd)
         * [Set Up CI/CD With Firebase on Google Cloud Platform and GitHub in 10 Minutes](https://betterprogramming.pub/set-up-ci-cd-with-firebase-gcp-and-github-in-10-minutes-be76bee4579e)
+        * [Container Registry vs Artifact Registry](https://cloud.google.com/blog/products/application-development/understanding-artifact-registry-vs-container-registry)
     * Tutorial/Lab
         * [Continuous deployment to Google Kubernetes Engine (GKE) with Cloud Build](https://codelabs.developers.google.com/codelabs/cloud-builder-gke-continuous-deploy/index.html#0)
 * Reviewing and improving continuous integration pipeline efficiency
